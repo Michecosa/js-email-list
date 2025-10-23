@@ -25,4 +25,4 @@ function getMails(n) {
 }
 
 getMails(10);
-console.log(emails);
+// console.log(emails);
