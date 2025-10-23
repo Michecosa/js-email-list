@@ -7,7 +7,7 @@ function getMails(n) {
   emails.length = 0;
   mailContainer.innerHTML = `
     <div class="spinner-container text-center my-5">
-      <div class="spinner-border text-light" role="status" style="width: 3rem; height: 3rem;">
+      <div class="spinner-border text-light" style="width: 3rem; height: 3rem;">
         <span class="visually-hidden">Caricamento...</span>
       </div>
     </div>
