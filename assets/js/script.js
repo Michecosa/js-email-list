@@ -18,3 +18,6 @@ function getMails(n) {
       .catch(error => console.error("Errore: ", error))
   }
 }
+
+getMails(10);
+console.log(emails);
