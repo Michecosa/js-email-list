@@ -15,9 +15,9 @@ function getMails(n) {
         const email = data.response;
         emails.push(email);
 
-        const li = document.createElement('li');
-        li.textContent = email;
-        mailContainer.appendChild(li);
+        const elem = document.createElement('div');
+        elem.textContent = email;
+        mailContainer.appendChild(elem);
       })
       .catch(error => console.error("Errore: ", error))
   }
