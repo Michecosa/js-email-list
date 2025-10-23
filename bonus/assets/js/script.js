@@ -23,7 +23,7 @@ function getMails(n) {
         `
         <div class="card rounded-5 h-100 mx-3">
           <div class="card-body text-center">
-            <h5 class="card-title">${email}</h5>
+            <h5 class="card-title mb-0">${email}</h5>
           </div>
         </div>
         `;
