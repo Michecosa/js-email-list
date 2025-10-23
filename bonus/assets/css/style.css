@@ -1,4 +1,15 @@
+:root {
+  --purple: #b444f5b1;
+  --cyan: #03ffffbc;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
+  color: white;
+
+  background-image: linear-gradient(var(--purple), var(--cyan));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; 
 }
