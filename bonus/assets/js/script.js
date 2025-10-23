@@ -16,7 +16,14 @@ function getMails(n) {
         emails.push(email);
 
         const elem = document.createElement('div');
-        elem.textContent = email;
+        elem.innerHTML = 
+        `
+        <div class="card">
+          <div class="card-body">
+            ${email}.
+          </div>
+        </div>
+        `;
         mailContainer.appendChild(elem);
       })
       .catch(error => console.error("Errore: ", error))
