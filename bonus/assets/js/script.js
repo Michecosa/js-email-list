@@ -9,6 +9,7 @@ const mailContainer = document.getElementById('mails');
 const refresh = document.getElementById('refresh');
 
 function getMails(n) {
+  mailContainer.innerHTML = "";
   for (let i = 0; i<n; i++) {
     fetch(url)
       .then(response => response.json())
