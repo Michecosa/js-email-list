@@ -12,7 +12,6 @@ function getMails(n) {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         emails.push(data.response)
       })
       .catch(error => console.error("Errore: ", error))
