@@ -16,10 +16,10 @@ function getMails(n) {
         emails.push(email);
 
         const elem = document.createElement('div');
-        elem.classList.add("col-sm-6", "col-md-4", "mb-3")
+        elem.classList.add("col-sm-6", "mb-3")
         elem.innerHTML = 
         `
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body text-center">
             <h5 class="card-title">${email}</h5>
           </div>
