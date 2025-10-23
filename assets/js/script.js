@@ -15,6 +15,10 @@ function getMails(n) {
       .then(data => {
         const email = data.response;
         emails.push(email);
+
+        const li = document.createElement('li');
+        li.textContent = email;
+        mailContainer.appendChild(li);
       })
       .catch(error => console.error("Errore: ", error))
   }
