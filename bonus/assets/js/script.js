@@ -6,6 +6,7 @@ Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le a
 const url = 'https://flynn.boolean.careers/exercises/api/random/mail';
 const emails = [];
 const mailContainer = document.getElementById('mails');
+const refresh = document.getElementById('refresh');
 
 function getMails(n) {
   for (let i = 0; i<n; i++) {
@@ -33,3 +34,5 @@ function getMails(n) {
 
 getMails(10);
 console.log(emails);
+
+refresh.addEventListener('click', () => getMails(10))
