@@ -21,14 +21,15 @@ function getMails(n) {
         elem.classList.add("col-sm-6", "mb-3")
         elem.innerHTML = 
         `
-        <div class="card h-100 mx-3">
+        <div class="card rounded-5 h-100 mx-3">
           <div class="card-body text-center">
             <h5 class="card-title">${email}</h5>
           </div>
         </div>
         `;
         mailContainer.appendChild(elem);
-      })
+      }
+    )
       .catch(error => console.error("Errore: ", error))
   }
 }
